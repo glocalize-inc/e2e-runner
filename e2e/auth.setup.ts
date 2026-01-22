@@ -1,8 +1,11 @@
 import { test as setup, expect } from '@playwright/test'
-import path from 'path'
 import fs from 'fs'
+import { AUTH_FILE, AUTH_DIR, ensureAuthDir } from './constants'
 
-const authFile = path.join(__dirname, '.auth/user.json')
+const authFile = AUTH_FILE
+
+// Ensure auth directory exists
+ensureAuthDir()
 
 /**
  * Check if there's already a valid auth state with currentRole set

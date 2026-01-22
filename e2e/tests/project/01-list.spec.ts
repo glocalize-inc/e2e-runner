@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test'
 import { ProjectListPage } from '../../pages/project-list.page'
 import { ensureLpmRole } from '../../helpers/role-helper'
+import { AUTH_FILE } from '../../constants'
 
 /**
  * Project List tests.
@@ -19,7 +20,7 @@ import { ensureLpmRole } from '../../helpers/role-helper'
  */
 
 test.describe('Project List', () => {
-  test.use({ storageState: './e2e/.auth/user.json' })
+  test.use({ storageState: AUTH_FILE })
 
   let projectListPage: ProjectListPage
 

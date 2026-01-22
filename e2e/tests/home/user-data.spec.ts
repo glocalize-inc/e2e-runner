@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test'
+import { AUTH_FILE } from '../../constants'
 
 /**
  * User Data tests.
@@ -27,7 +28,7 @@ function hasRole(sessionRoles: string[], roleName: string): boolean {
 }
 
 test.describe('User Data', () => {
-  test.use({ storageState: './e2e/.auth/user.json' })
+  test.use({ storageState: AUTH_FILE })
 
   test.beforeEach(async ({ page }) => {
     await page.goto('/home', { timeout: 30000, waitUntil: 'domcontentloaded' })

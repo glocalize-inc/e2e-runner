@@ -1,12 +1,17 @@
 import { defineConfig, devices } from '@playwright/test'
 import path from 'path'
 import dotenv from 'dotenv'
+import { AUTH_FILE, isVercel } from './e2e/constants'
 
 dotenv.config({ path: path.resolve(__dirname, '.env.staging') })
 
+// Use /tmp for output in Vercel environment (read-only filesystem)
+const outputDir = isVercel ? '/tmp/e2e/test-results-staging' : './e2e/test-results-staging'
+const reportDir = isVercel ? '/tmp/e2e/playwright-report' : './public/e2e/playwright-report'
+
 export default defineConfig({
   testDir: './e2e',
-  outputDir: './e2e/test-results-staging',
+  outputDir,
   timeout: 60 * 1000,
 
   expect: {
@@ -19,7 +24,7 @@ export default defineConfig({
   workers: 3,
 
   reporter: [
-    ['html', { outputFolder: './public/e2e/playwright-report', open: 'never' }],
+    ['html', { outputFolder: reportDir, open: 'never' }],
     ['list'],
   ],
 
@@ -42,7 +47,7 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        storageState: './e2e/.auth/user.json',
+        storageState: AUTH_FILE,
       },
       dependencies: ['setup'],
     },

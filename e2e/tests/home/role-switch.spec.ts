@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test'
+import { AUTH_FILE } from '../../constants'
 
 /**
  * Role Switch tests.
@@ -21,7 +22,7 @@ function hasRole(sessionRoles: string[], roleName: string): boolean {
 }
 
 test.describe('Role Switch', () => {
-  test.use({ storageState: './e2e/.auth/user.json' })
+  test.use({ storageState: AUTH_FILE })
 
   // Run tests sequentially to avoid state conflicts
   test.describe.configure({ mode: 'serial' })
