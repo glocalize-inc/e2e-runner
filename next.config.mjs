@@ -6,8 +6,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  serverExternalPackages: ['@playwright/test', 'playwright', 'playwright-core'],
   outputFileTracingRoot: __dirname,
+  // Include all playwright-related files in the serverless bundle
   outputFileTracingIncludes: {
     '/api/e2e/**/*': [
       './playwright.config.ts',

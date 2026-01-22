@@ -35,6 +35,12 @@ importers:
       next:
         specifier: ^15.1.0
         version: 15.5.9(@playwright/test@1.57.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      playwright:
+        specifier: ^1.50.0
+        version: 1.57.0
+      playwright-core:
+        specifier: ^1.50.0
+        version: 1.57.0
       react:
         specifier: ^19.0.0
         version: 19.2.3
