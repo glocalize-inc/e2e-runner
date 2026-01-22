@@ -1,0 +1,2386 @@
+{
+  "all": {
+    "total": 197,
+    "tests": [
+      {
+        "id": "tests/auth/login.spec.ts:should redirect unauthenticated user to login page",
+        "name": "should redirect unauthenticated user to login page",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/login.spec.ts:should successfully authenticate with valid credentials",
+        "name": "should successfully authenticate with valid credentials",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/login.spec.ts:should handle missing token gracefully",
+        "name": "should handle missing token gracefully",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/login.spec.ts:should preserve callback URL after authentication",
+        "name": "should preserve callback URL after authentication",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/logout.spec.ts:should successfully logout via API route",
+        "name": "should successfully logout via API route",
+        "file": "tests/auth/logout.spec.ts",
+        "suite": "Logout Flow"
+      },
+      {
+        "id": "tests/auth/logout.spec.ts:should clear auth cookies on logout",
+        "name": "should clear auth cookies on logout",
+        "file": "tests/auth/logout.spec.ts",
+        "suite": "Logout Flow"
+      },
+      {
+        "id": "tests/auth/logout.spec.ts:should redirect to login after logout when accessing protected route",
+        "name": "should redirect to login after logout when accessing protected route",
+        "file": "tests/auth/logout.spec.ts",
+        "suite": "Logout Flow"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should maintain session across page navigations",
+        "name": "should maintain session across page navigations",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should display authenticated UI elements",
+        "name": "should display authenticated UI elements",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should handle page refresh without losing session",
+        "name": "should handle page refresh without losing session",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should show error page for session errors",
+        "name": "should show error page for session errors",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should handle RefreshTokenError gracefully",
+        "name": "should handle RefreshTokenError gracefully",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should display LPM home with quick access cards",
+        "name": "should display LPM home with quick access cards",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to project creation when clicking Create Project",
+        "name": "should navigate to project creation when clicking Create Project",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to projects list when clicking Projects card",
+        "name": "should navigate to projects list when clicking Projects card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to job list when clicking Job List card",
+        "name": "should navigate to job list when clicking Job List card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to pros list when clicking Pros card",
+        "name": "should navigate to pros list when clicking Pros card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to clients when clicking Clients card",
+        "name": "should navigate to clients when clicking Clients card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should display TAD home with onboarding sections",
+        "name": "should display TAD home with onboarding sections",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to onboarding when clicking Start now",
+        "name": "should navigate to onboarding when clicking Start now",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to onboarding when clicking Onboarding overview",
+        "name": "should navigate to onboarding when clicking Onboarding overview",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should display stat cards with values",
+        "name": "should display stat cards with values",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should display Today\\",
+        "name": "should display Today\\",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should open WowSub in new tab when clicking Go to WowSub",
+        "name": "should open WowSub in new tab when clicking Go to WowSub",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should display role switch only when user has multiple roles",
+        "name": "should display role switch only when user has multiple roles",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should verify currentRole in localStorage matches switch state",
+        "name": "should verify currentRole in localStorage matches switch state",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should update currentRole in localStorage when switching roles",
+        "name": "should update currentRole in localStorage when switching roles",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should switch from LPM to TAD role and verify UI",
+        "name": "should switch from LPM to TAD role and verify UI",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should switch from TAD to LPM role and verify UI",
+        "name": "should switch from TAD to LPM role and verify UI",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should toggle role switch and verify menu changes",
+        "name": "should toggle role switch and verify menu changes",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should highlight active role label when switched",
+        "name": "should highlight active role label when switched",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have user session with roles",
+        "name": "should have user session with roles",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have currentRole stored in localStorage",
+        "name": "should have currentRole stored in localStorage",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have multiple roles for role switching capability",
+        "name": "should have multiple roles for role switching capability",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should match currentRole with one of session roles",
+        "name": "should match currentRole with one of session roles",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should display correct UI based on currentRole",
+        "name": "should display correct UI based on currentRole",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have user info in session",
+        "name": "should have user info in session",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to project list page",
+        "name": "should navigate to project list page",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display page title",
+        "name": "should display page title",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display project count in title",
+        "name": "should display project count in title",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display Add New Project button",
+        "name": "should display Add New Project button",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to create project page when clicking Add New Project",
+        "name": "should navigate to create project page when clicking Add New Project",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display Smart Import button",
+        "name": "should display Smart Import button",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display filter elements",
+        "name": "should display filter elements",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display search input",
+        "name": "should display search input",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display reset button",
+        "name": "should display reset button",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should load table data or show empty state",
+        "name": "should load table data or show empty state",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display table column headers",
+        "name": "should display table column headers",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to project detail when clicking a row",
+        "name": "should navigate to project detail when clicking a row",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should have working search input",
+        "name": "should have working search input",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should filter results when searching",
+        "name": "should filter results when searching",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to project list from LPM home",
+        "name": "should navigate to project list from LPM home",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should navigate to project create page",
+        "name": "should navigate to project create page",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display page title",
+        "name": "should display page title",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Create Project button",
+        "name": "should display Create Project button",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Cancel button",
+        "name": "should display Cancel button",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Information section",
+        "name": "should display Project Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Client Information section",
+        "name": "should display Client Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Add new client button",
+        "name": "should display Add new client button",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Client field with required marker",
+        "name": "should show Client field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Manager field with required marker",
+        "name": "should show Manager field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Project Name field with required marker",
+        "name": "should show Project Name field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Timezone field with required marker",
+        "name": "should show Timezone field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Request Date field",
+        "name": "should show Request Date field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Project Due Date field",
+        "name": "should show Project Due Date field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show validation errors when submitting empty form",
+        "name": "should show validation errors when submitting empty form",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should not navigate away when form is invalid",
+        "name": "should not navigate away when form is invalid",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Project Name is required",
+        "name": "should validate Project Name is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Client selection is required",
+        "name": "should validate Client selection is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Project Due Date is required",
+        "name": "should validate Project Due Date is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Client select field",
+        "name": "should display Client select field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Timezone select field",
+        "name": "should display Timezone select field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Revenue From select field",
+        "name": "should display Revenue From select field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Name input field",
+        "name": "should display Project Name input field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Description textarea",
+        "name": "should display Project Description textarea",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should have maxLength attribute on Project Name field",
+        "name": "should have maxLength attribute on Project Name field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Item 1 by default",
+        "name": "should display Item 1 by default",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Basic Information section in item",
+        "name": "should display Basic Information section in item",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Details section in item",
+        "name": "should display Project Details section in item",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Item Title field",
+        "name": "should display Item Title field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Due Date field in item",
+        "name": "should display Due Date field in item",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Category field",
+        "name": "should display Category field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Source field",
+        "name": "should display Source field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Target field",
+        "name": "should display Target field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Item Title is required",
+        "name": "should validate Item Title is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Category is required",
+        "name": "should validate Category is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Source is required",
+        "name": "should validate Source is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Target is required",
+        "name": "should validate Target is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should navigate back when Cancel is clicked",
+        "name": "should navigate back when Cancel is clicked",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show completion badge in Project Information section",
+        "name": "should show completion badge in Project Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display completion count in badge",
+        "name": "should display completion count in badge",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should toggle Basic Information section",
+        "name": "should toggle Basic Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should toggle Project Details section",
+        "name": "should toggle Project Details section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should toggle Jobs section",
+        "name": "should toggle Jobs section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Currency field",
+        "name": "should display Currency field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Taxable checkbox",
+        "name": "should display Taxable checkbox",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Discount checkbox",
+        "name": "should display Discount checkbox",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should create a new project with [Auto Test] prefix",
+        "name": "should create a new project with [Auto Test] prefix",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show created project in project list",
+        "name": "should show created project in project list",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should navigate to project detail from list",
+        "name": "should navigate to project detail from list",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display project detail page",
+        "name": "should display project detail page",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display project ID in URL",
+        "name": "should display project ID in URL",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display project ID in header",
+        "name": "should display project ID in header",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display status badge",
+        "name": "should display status badge",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display Print Quote button",
+        "name": "should display Print Quote button",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display Print Order button",
+        "name": "should display Print Order button",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display all tabs",
+        "name": "should display all tabs",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should have Details tab active by default",
+        "name": "should have Details tab active by default",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch to Jobs tab",
+        "name": "should switch to Jobs tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch to Files tab",
+        "name": "should switch to Files tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch to Invoice tab",
+        "name": "should switch to Invoice tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch back to Details tab",
+        "name": "should switch back to Details tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display details tab content",
+        "name": "should display details tab content",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display history sidebar",
+        "name": "should display history sidebar",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display action buttons",
+        "name": "should display action buttons",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should navigate back to project list",
+        "name": "should navigate back to project list",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should load project detail via direct URL",
+        "name": "should load project detail via direct URL",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should find a project for print tests",
+        "name": "should find a project for print tests",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should display Print Quote button",
+        "name": "should display Print Quote button",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should open Quote Settings modal when clicking Print Quote",
+        "name": "should open Quote Settings modal when clicking Print Quote",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should cancel Quote Settings modal",
+        "name": "should cancel Quote Settings modal",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should apply Quote Settings and show PDF preview",
+        "name": "should apply Quote Settings and show PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should show Quote content in PDF preview",
+        "name": "should show Quote content in PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should trigger download when clicking Download button",
+        "name": "should trigger download when clicking Download button",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should find a project for print order tests",
+        "name": "should find a project for print order tests",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should display Print Order button",
+        "name": "should display Print Order button",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should open Order Settings modal when clicking Print Order",
+        "name": "should open Order Settings modal when clicking Print Order",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should cancel Order Settings modal",
+        "name": "should cancel Order Settings modal",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should apply Order Settings and show PDF preview",
+        "name": "should apply Order Settings and show PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should show Order content in PDF preview",
+        "name": "should show Order content in PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should trigger download when clicking Download button for Order",
+        "name": "should trigger download when clicking Download button for Order",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should show Print buttons on eligible projects",
+        "name": "should show Print buttons on eligible projects",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should use project from create.spec.ts",
+        "name": "should use project from create.spec.ts",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Edit button on Project Info section",
+        "name": "should display Edit button on Project Info section",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should enter edit mode when Edit button is clicked",
+        "name": "should enter edit mode when Edit button is clicked",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should cancel edit mode without saving changes",
+        "name": "should cancel edit mode without saving changes",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should save changes to Project Description",
+        "name": "should save changes to Project Description",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should save changes to Management Status",
+        "name": "should save changes to Management Status",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should update multiple fields and save",
+        "name": "should update multiple fields and save",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should persist changes after page reload",
+        "name": "should persist changes after page reload",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Edit button on Item Info section",
+        "name": "should display Edit button on Item Info section",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should enter Item Info edit mode when Edit button is clicked",
+        "name": "should enter Item Info edit mode when Edit button is clicked",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should cancel Item Info edit mode without saving changes",
+        "name": "should cancel Item Info edit mode without saving changes",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display item details in view mode",
+        "name": "should display item details in view mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should show Price Summary sidebar when editing Item Info",
+        "name": "should show Price Summary sidebar when editing Item Info",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should have collapsible item sections in edit mode",
+        "name": "should have collapsible item sections in edit mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Edit button on Project Team section",
+        "name": "should display Edit button on Project Team section",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should enter Project Team edit mode when Edit button is clicked",
+        "name": "should enter Project Team edit mode when Edit button is clicked",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should cancel Project Team edit mode without saving changes",
+        "name": "should cancel Project Team edit mode without saving changes",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Project Team details in view mode",
+        "name": "should display Project Team details in view mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should show form fields in edit mode",
+        "name": "should show form fields in edit mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should save changes to Project Manager",
+        "name": "should save changes to Project Manager",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should persist Project Team changes after page reload",
+        "name": "should persist Project Team changes after page reload",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should use project from create.spec.ts",
+        "name": "should use project from create.spec.ts",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should navigate to Jobs tab",
+        "name": "should navigate to Jobs tab",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should display job items in Jobs tab",
+        "name": "should display job items in Jobs tab",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should open dropdown menu from item header",
+        "name": "should open dropdown menu from item header",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should enter edit mode when clicking Edit jobs",
+        "name": "should enter edit mode when clicking Edit jobs",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should show Add Job button in edit mode",
+        "name": "should show Add Job button in edit mode",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should add a new job row when clicking Add Job",
+        "name": "should add a new job row when clicking Add Job",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should save jobs successfully after adding",
+        "name": "should save jobs successfully after adding",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should complete full flow: Edit jobs → Add job → Save",
+        "name": "should complete full flow: Edit jobs → Add job → Save",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should cancel edit mode without saving",
+        "name": "should cancel edit mode without saving",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should edit an existing job with all available fields",
+        "name": "should edit an existing job with all available fields",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 1: Find existing project for Assign Pro tests",
+        "name": "Step 1: Find existing project for Assign Pro tests",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 2: Create 4 jobs with all required fields for Assign Pro",
+        "name": "Step 2: Create 4 jobs with all required fields for Assign Pro",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 3: Navigate to Jobs tab and verify Assign Pro buttons",
+        "name": "Step 3: Navigate to Jobs tab and verify Assign Pro buttons",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 1: Immediate Assign - Single pro direct assignment",
+        "name": "Test 1: Immediate Assign - Single pro direct assignment",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 2: Relay Request - Sequential request to multiple pros",
+        "name": "Test 2: Relay Request - Sequential request to multiple pros",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 3: Mass Request (FCFS) - First Come First Served",
+        "name": "Test 3: Mass Request (FCFS) - First Come First Served",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 4: Mass Request (Manual) - Manual selection from applicants",
+        "name": "Test 4: Mass Request (Manual) - Manual selection from applicants",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 6: Verify all tabs work (TEAM, PRO, PM)",
+        "name": "Step 6: Verify all tabs work (TEAM, PRO, PM)",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:should verify Assign Pro button states across multiple jobs",
+        "name": "should verify Assign Pro button states across multiple jobs",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:should search and filter pros in PRO tab",
+        "name": "should search and filter pros in PRO tab",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 1: Use project from create.spec.ts",
+        "name": "Step 1: Use project from create.spec.ts",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 2: Navigate to Invoice tab",
+        "name": "Step 2: Navigate to Invoice tab",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 3: Complete the project (if In Progress)",
+        "name": "Step 3: Complete the project (if In Progress)",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 4: Check Create Invoice button state",
+        "name": "Step 4: Check Create Invoice button state",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 5: Create Invoice",
+        "name": "Step 5: Create Invoice",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 6: Verify Invoice details",
+        "name": "Step 6: Verify Invoice details",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 7: Edit Invoice Info",
+        "name": "Step 7: Edit Invoice Info",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 8: Edit Accounting Info",
+        "name": "Step 8: Edit Accounting Info",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 9: Download Invoice",
+        "name": "Step 9: Download Invoice",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 10: Send Invoice",
+        "name": "Step 10: Send Invoice",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should find a project for cancel tests",
+        "name": "should find a project for cancel tests",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should display Cancel this project button",
+        "name": "should display Cancel this project button",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should check Cancel button availability based on status",
+        "name": "should check Cancel button availability based on status",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should open Cancel Project modal when clicking button",
+        "name": "should open Cancel Project modal when clicking button",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should display cancel reasons in modal",
+        "name": "should display cancel reasons in modal",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should have Cancel button disabled initially in modal",
+        "name": "should have Cancel button disabled initially in modal",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should keep Cancel button disabled with only reason selected",
+        "name": "should keep Cancel button disabled with only reason selected",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should keep Cancel button disabled with only message entered",
+        "name": "should keep Cancel button disabled with only message entered",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should enable Cancel button when both reason and message are provided",
+        "name": "should enable Cancel button when both reason and message are provided",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should close modal when clicking No button",
+        "name": "should close modal when clicking No button",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should display character count for message textarea",
+        "name": "should display character count for message textarea",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should verify all form elements in cancel modal",
+        "name": "should verify all form elements in cancel modal",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should show Cancel button on project detail page",
+        "name": "should show Cancel button on project detail page",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      }
+    ]
+  },
+  "auth": {
+    "total": 12,
+    "tests": [
+      {
+        "id": "tests/auth/login.spec.ts:should redirect unauthenticated user to login page",
+        "name": "should redirect unauthenticated user to login page",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/login.spec.ts:should successfully authenticate with valid credentials",
+        "name": "should successfully authenticate with valid credentials",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/login.spec.ts:should handle missing token gracefully",
+        "name": "should handle missing token gracefully",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/login.spec.ts:should preserve callback URL after authentication",
+        "name": "should preserve callback URL after authentication",
+        "file": "tests/auth/login.spec.ts",
+        "suite": "Login Flow"
+      },
+      {
+        "id": "tests/auth/logout.spec.ts:should successfully logout via API route",
+        "name": "should successfully logout via API route",
+        "file": "tests/auth/logout.spec.ts",
+        "suite": "Logout Flow"
+      },
+      {
+        "id": "tests/auth/logout.spec.ts:should clear auth cookies on logout",
+        "name": "should clear auth cookies on logout",
+        "file": "tests/auth/logout.spec.ts",
+        "suite": "Logout Flow"
+      },
+      {
+        "id": "tests/auth/logout.spec.ts:should redirect to login after logout when accessing protected route",
+        "name": "should redirect to login after logout when accessing protected route",
+        "file": "tests/auth/logout.spec.ts",
+        "suite": "Logout Flow"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should maintain session across page navigations",
+        "name": "should maintain session across page navigations",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should display authenticated UI elements",
+        "name": "should display authenticated UI elements",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should handle page refresh without losing session",
+        "name": "should handle page refresh without losing session",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should show error page for session errors",
+        "name": "should show error page for session errors",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      },
+      {
+        "id": "tests/auth/session.spec.ts:should handle RefreshTokenError gracefully",
+        "name": "should handle RefreshTokenError gracefully",
+        "file": "tests/auth/session.spec.ts",
+        "suite": "Session Management"
+      }
+    ]
+  },
+  "home": {
+    "total": 25,
+    "tests": [
+      {
+        "id": "tests/home/navigation.spec.ts:should display LPM home with quick access cards",
+        "name": "should display LPM home with quick access cards",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to project creation when clicking Create Project",
+        "name": "should navigate to project creation when clicking Create Project",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to projects list when clicking Projects card",
+        "name": "should navigate to projects list when clicking Projects card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to job list when clicking Job List card",
+        "name": "should navigate to job list when clicking Job List card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to pros list when clicking Pros card",
+        "name": "should navigate to pros list when clicking Pros card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to clients when clicking Clients card",
+        "name": "should navigate to clients when clicking Clients card",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should display TAD home with onboarding sections",
+        "name": "should display TAD home with onboarding sections",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to onboarding when clicking Start now",
+        "name": "should navigate to onboarding when clicking Start now",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should navigate to onboarding when clicking Onboarding overview",
+        "name": "should navigate to onboarding when clicking Onboarding overview",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should display stat cards with values",
+        "name": "should display stat cards with values",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should display Today\\",
+        "name": "should display Today\\",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/navigation.spec.ts:should open WowSub in new tab when clicking Go to WowSub",
+        "name": "should open WowSub in new tab when clicking Go to WowSub",
+        "file": "tests/home/navigation.spec.ts",
+        "suite": "Home Page Navigation"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should display role switch only when user has multiple roles",
+        "name": "should display role switch only when user has multiple roles",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should verify currentRole in localStorage matches switch state",
+        "name": "should verify currentRole in localStorage matches switch state",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should update currentRole in localStorage when switching roles",
+        "name": "should update currentRole in localStorage when switching roles",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should switch from LPM to TAD role and verify UI",
+        "name": "should switch from LPM to TAD role and verify UI",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should switch from TAD to LPM role and verify UI",
+        "name": "should switch from TAD to LPM role and verify UI",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should toggle role switch and verify menu changes",
+        "name": "should toggle role switch and verify menu changes",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/role-switch.spec.ts:should highlight active role label when switched",
+        "name": "should highlight active role label when switched",
+        "file": "tests/home/role-switch.spec.ts",
+        "suite": "Role Switch"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have user session with roles",
+        "name": "should have user session with roles",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have currentRole stored in localStorage",
+        "name": "should have currentRole stored in localStorage",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have multiple roles for role switching capability",
+        "name": "should have multiple roles for role switching capability",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should match currentRole with one of session roles",
+        "name": "should match currentRole with one of session roles",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should display correct UI based on currentRole",
+        "name": "should display correct UI based on currentRole",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      },
+      {
+        "id": "tests/home/user-data.spec.ts:should have user info in session",
+        "name": "should have user info in session",
+        "file": "tests/home/user-data.spec.ts",
+        "suite": "User Data"
+      }
+    ]
+  },
+  "project": {
+    "total": 160,
+    "tests": [
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to project list page",
+        "name": "should navigate to project list page",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display page title",
+        "name": "should display page title",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display project count in title",
+        "name": "should display project count in title",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display Add New Project button",
+        "name": "should display Add New Project button",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to create project page when clicking Add New Project",
+        "name": "should navigate to create project page when clicking Add New Project",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display Smart Import button",
+        "name": "should display Smart Import button",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display filter elements",
+        "name": "should display filter elements",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display search input",
+        "name": "should display search input",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display reset button",
+        "name": "should display reset button",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should load table data or show empty state",
+        "name": "should load table data or show empty state",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should display table column headers",
+        "name": "should display table column headers",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to project detail when clicking a row",
+        "name": "should navigate to project detail when clicking a row",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should have working search input",
+        "name": "should have working search input",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should filter results when searching",
+        "name": "should filter results when searching",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/01-list.spec.ts:should navigate to project list from LPM home",
+        "name": "should navigate to project list from LPM home",
+        "file": "tests/project/01-list.spec.ts",
+        "suite": "Project List"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should navigate to project create page",
+        "name": "should navigate to project create page",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display page title",
+        "name": "should display page title",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Create Project button",
+        "name": "should display Create Project button",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Cancel button",
+        "name": "should display Cancel button",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Information section",
+        "name": "should display Project Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Client Information section",
+        "name": "should display Client Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Add new client button",
+        "name": "should display Add new client button",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Client field with required marker",
+        "name": "should show Client field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Manager field with required marker",
+        "name": "should show Manager field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Project Name field with required marker",
+        "name": "should show Project Name field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Timezone field with required marker",
+        "name": "should show Timezone field with required marker",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Request Date field",
+        "name": "should show Request Date field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show Project Due Date field",
+        "name": "should show Project Due Date field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show validation errors when submitting empty form",
+        "name": "should show validation errors when submitting empty form",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should not navigate away when form is invalid",
+        "name": "should not navigate away when form is invalid",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Project Name is required",
+        "name": "should validate Project Name is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Client selection is required",
+        "name": "should validate Client selection is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Project Due Date is required",
+        "name": "should validate Project Due Date is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Client select field",
+        "name": "should display Client select field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Timezone select field",
+        "name": "should display Timezone select field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Revenue From select field",
+        "name": "should display Revenue From select field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Name input field",
+        "name": "should display Project Name input field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Description textarea",
+        "name": "should display Project Description textarea",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should have maxLength attribute on Project Name field",
+        "name": "should have maxLength attribute on Project Name field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Item 1 by default",
+        "name": "should display Item 1 by default",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Basic Information section in item",
+        "name": "should display Basic Information section in item",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Project Details section in item",
+        "name": "should display Project Details section in item",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Item Title field",
+        "name": "should display Item Title field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Due Date field in item",
+        "name": "should display Due Date field in item",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Category field",
+        "name": "should display Category field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Source field",
+        "name": "should display Source field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Target field",
+        "name": "should display Target field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Item Title is required",
+        "name": "should validate Item Title is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Category is required",
+        "name": "should validate Category is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Source is required",
+        "name": "should validate Source is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should validate Target is required",
+        "name": "should validate Target is required",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should navigate back when Cancel is clicked",
+        "name": "should navigate back when Cancel is clicked",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show completion badge in Project Information section",
+        "name": "should show completion badge in Project Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display completion count in badge",
+        "name": "should display completion count in badge",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should toggle Basic Information section",
+        "name": "should toggle Basic Information section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should toggle Project Details section",
+        "name": "should toggle Project Details section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should toggle Jobs section",
+        "name": "should toggle Jobs section",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Currency field",
+        "name": "should display Currency field",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Taxable checkbox",
+        "name": "should display Taxable checkbox",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should display Discount checkbox",
+        "name": "should display Discount checkbox",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should create a new project with [Auto Test] prefix",
+        "name": "should create a new project with [Auto Test] prefix",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/02-create.spec.ts:should show created project in project list",
+        "name": "should show created project in project list",
+        "file": "tests/project/02-create.spec.ts",
+        "suite": "Project Create"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should navigate to project detail from list",
+        "name": "should navigate to project detail from list",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display project detail page",
+        "name": "should display project detail page",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display project ID in URL",
+        "name": "should display project ID in URL",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display project ID in header",
+        "name": "should display project ID in header",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display status badge",
+        "name": "should display status badge",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display Print Quote button",
+        "name": "should display Print Quote button",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display Print Order button",
+        "name": "should display Print Order button",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display all tabs",
+        "name": "should display all tabs",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should have Details tab active by default",
+        "name": "should have Details tab active by default",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch to Jobs tab",
+        "name": "should switch to Jobs tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch to Files tab",
+        "name": "should switch to Files tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch to Invoice tab",
+        "name": "should switch to Invoice tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should switch back to Details tab",
+        "name": "should switch back to Details tab",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display details tab content",
+        "name": "should display details tab content",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display history sidebar",
+        "name": "should display history sidebar",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should display action buttons",
+        "name": "should display action buttons",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should navigate back to project list",
+        "name": "should navigate back to project list",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/03-detail.spec.ts:should load project detail via direct URL",
+        "name": "should load project detail via direct URL",
+        "file": "tests/project/03-detail.spec.ts",
+        "suite": "Project Detail"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should find a project for print tests",
+        "name": "should find a project for print tests",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should display Print Quote button",
+        "name": "should display Print Quote button",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should open Quote Settings modal when clicking Print Quote",
+        "name": "should open Quote Settings modal when clicking Print Quote",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should cancel Quote Settings modal",
+        "name": "should cancel Quote Settings modal",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should apply Quote Settings and show PDF preview",
+        "name": "should apply Quote Settings and show PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should show Quote content in PDF preview",
+        "name": "should show Quote content in PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should trigger download when clicking Download button",
+        "name": "should trigger download when clicking Download button",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should find a project for print order tests",
+        "name": "should find a project for print order tests",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should display Print Order button",
+        "name": "should display Print Order button",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should open Order Settings modal when clicking Print Order",
+        "name": "should open Order Settings modal when clicking Print Order",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should cancel Order Settings modal",
+        "name": "should cancel Order Settings modal",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should apply Order Settings and show PDF preview",
+        "name": "should apply Order Settings and show PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should show Order content in PDF preview",
+        "name": "should show Order content in PDF preview",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should trigger download when clicking Download button for Order",
+        "name": "should trigger download when clicking Download button for Order",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/04-print.spec.ts:should show Print buttons on eligible projects",
+        "name": "should show Print buttons on eligible projects",
+        "file": "tests/project/04-print.spec.ts",
+        "suite": "Project Print"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should use project from create.spec.ts",
+        "name": "should use project from create.spec.ts",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Edit button on Project Info section",
+        "name": "should display Edit button on Project Info section",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should enter edit mode when Edit button is clicked",
+        "name": "should enter edit mode when Edit button is clicked",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should cancel edit mode without saving changes",
+        "name": "should cancel edit mode without saving changes",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should save changes to Project Description",
+        "name": "should save changes to Project Description",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should save changes to Management Status",
+        "name": "should save changes to Management Status",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should update multiple fields and save",
+        "name": "should update multiple fields and save",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should persist changes after page reload",
+        "name": "should persist changes after page reload",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Edit button on Item Info section",
+        "name": "should display Edit button on Item Info section",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should enter Item Info edit mode when Edit button is clicked",
+        "name": "should enter Item Info edit mode when Edit button is clicked",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should cancel Item Info edit mode without saving changes",
+        "name": "should cancel Item Info edit mode without saving changes",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display item details in view mode",
+        "name": "should display item details in view mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should show Price Summary sidebar when editing Item Info",
+        "name": "should show Price Summary sidebar when editing Item Info",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should have collapsible item sections in edit mode",
+        "name": "should have collapsible item sections in edit mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Edit button on Project Team section",
+        "name": "should display Edit button on Project Team section",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should enter Project Team edit mode when Edit button is clicked",
+        "name": "should enter Project Team edit mode when Edit button is clicked",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should cancel Project Team edit mode without saving changes",
+        "name": "should cancel Project Team edit mode without saving changes",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should display Project Team details in view mode",
+        "name": "should display Project Team details in view mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should show form fields in edit mode",
+        "name": "should show form fields in edit mode",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should save changes to Project Manager",
+        "name": "should save changes to Project Manager",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/05-edit.spec.ts:should persist Project Team changes after page reload",
+        "name": "should persist Project Team changes after page reload",
+        "file": "tests/project/05-edit.spec.ts",
+        "suite": "Project Edit"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should use project from create.spec.ts",
+        "name": "should use project from create.spec.ts",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should navigate to Jobs tab",
+        "name": "should navigate to Jobs tab",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should display job items in Jobs tab",
+        "name": "should display job items in Jobs tab",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should open dropdown menu from item header",
+        "name": "should open dropdown menu from item header",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should enter edit mode when clicking Edit jobs",
+        "name": "should enter edit mode when clicking Edit jobs",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should show Add Job button in edit mode",
+        "name": "should show Add Job button in edit mode",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should add a new job row when clicking Add Job",
+        "name": "should add a new job row when clicking Add Job",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should save jobs successfully after adding",
+        "name": "should save jobs successfully after adding",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should complete full flow: Edit jobs → Add job → Save",
+        "name": "should complete full flow: Edit jobs → Add job → Save",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should cancel edit mode without saving",
+        "name": "should cancel edit mode without saving",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/06-jobs.spec.ts:should edit an existing job with all available fields",
+        "name": "should edit an existing job with all available fields",
+        "file": "tests/project/06-jobs.spec.ts",
+        "suite": "Project Jobs Tab"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 1: Find existing project for Assign Pro tests",
+        "name": "Step 1: Find existing project for Assign Pro tests",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 2: Create 4 jobs with all required fields for Assign Pro",
+        "name": "Step 2: Create 4 jobs with all required fields for Assign Pro",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 3: Navigate to Jobs tab and verify Assign Pro buttons",
+        "name": "Step 3: Navigate to Jobs tab and verify Assign Pro buttons",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 1: Immediate Assign - Single pro direct assignment",
+        "name": "Test 1: Immediate Assign - Single pro direct assignment",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 2: Relay Request - Sequential request to multiple pros",
+        "name": "Test 2: Relay Request - Sequential request to multiple pros",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 3: Mass Request (FCFS) - First Come First Served",
+        "name": "Test 3: Mass Request (FCFS) - First Come First Served",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Test 4: Mass Request (Manual) - Manual selection from applicants",
+        "name": "Test 4: Mass Request (Manual) - Manual selection from applicants",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:Step 6: Verify all tabs work (TEAM, PRO, PM)",
+        "name": "Step 6: Verify all tabs work (TEAM, PRO, PM)",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:should verify Assign Pro button states across multiple jobs",
+        "name": "should verify Assign Pro button states across multiple jobs",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/07-assign-pro.spec.ts:should search and filter pros in PRO tab",
+        "name": "should search and filter pros in PRO tab",
+        "file": "tests/project/07-assign-pro.spec.ts",
+        "suite": "Project Assign Pro"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 1: Use project from create.spec.ts",
+        "name": "Step 1: Use project from create.spec.ts",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 2: Navigate to Invoice tab",
+        "name": "Step 2: Navigate to Invoice tab",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 3: Complete the project (if In Progress)",
+        "name": "Step 3: Complete the project (if In Progress)",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 4: Check Create Invoice button state",
+        "name": "Step 4: Check Create Invoice button state",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 5: Create Invoice",
+        "name": "Step 5: Create Invoice",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 6: Verify Invoice details",
+        "name": "Step 6: Verify Invoice details",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 7: Edit Invoice Info",
+        "name": "Step 7: Edit Invoice Info",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 8: Edit Accounting Info",
+        "name": "Step 8: Edit Accounting Info",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 9: Download Invoice",
+        "name": "Step 9: Download Invoice",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/08-invoice.spec.ts:Step 10: Send Invoice",
+        "name": "Step 10: Send Invoice",
+        "file": "tests/project/08-invoice.spec.ts",
+        "suite": "Project Invoice"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should find a project for cancel tests",
+        "name": "should find a project for cancel tests",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should display Cancel this project button",
+        "name": "should display Cancel this project button",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should check Cancel button availability based on status",
+        "name": "should check Cancel button availability based on status",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should open Cancel Project modal when clicking button",
+        "name": "should open Cancel Project modal when clicking button",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should display cancel reasons in modal",
+        "name": "should display cancel reasons in modal",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should have Cancel button disabled initially in modal",
+        "name": "should have Cancel button disabled initially in modal",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should keep Cancel button disabled with only reason selected",
+        "name": "should keep Cancel button disabled with only reason selected",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should keep Cancel button disabled with only message entered",
+        "name": "should keep Cancel button disabled with only message entered",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should enable Cancel button when both reason and message are provided",
+        "name": "should enable Cancel button when both reason and message are provided",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should close modal when clicking No button",
+        "name": "should close modal when clicking No button",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should display character count for message textarea",
+        "name": "should display character count for message textarea",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should verify all form elements in cancel modal",
+        "name": "should verify all form elements in cancel modal",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      },
+      {
+        "id": "tests/project/09-cancel.spec.ts:should show Cancel button on project detail page",
+        "name": "should show Cancel button on project detail page",
+        "file": "tests/project/09-cancel.spec.ts",
+        "suite": "Project Cancel"
+      }
+    ]
+  }
+}

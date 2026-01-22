@@ -1,0 +1,45 @@
+{
+  "name": "e2e-runner",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3002",
+    "build": "npm run e2e:generate-list && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "e2e": "playwright test",
+    "e2e:staging": "playwright test --config=playwright.staging.config.ts",
+    "e2e:hub": "playwright test --config=playwright.hub.config.ts",
+    "e2e:ui": "playwright test --ui",
+    "e2e:headed": "playwright test --headed",
+    "e2e:report": "playwright show-report public/e2e/playwright-report",
+    "e2e:generate-list": "npx tsx scripts/generate-test-list.ts"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.50.0",
+    "@radix-ui/react-scroll-area": "^1.2.2",
+    "@tanstack/react-query": "^5.59.20",
+    "@tanstack/react-virtual": "^3.11.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "lucide-react": "^0.468.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.5.5",
+    "uuid": "^11.0.4",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.2"
+  }
+}
