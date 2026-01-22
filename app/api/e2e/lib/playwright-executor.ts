@@ -77,6 +77,32 @@ function getTmpSpaceMB(): number {
   }
 }
 
+function findChromiumExecutable(browsersPath: string): string | null {
+  try {
+    if (!fs.existsSync(browsersPath)) return null
+
+    const dirs = fs.readdirSync(browsersPath)
+    for (const dir of dirs) {
+      if (dir.startsWith('chromium')) {
+        const chromiumDir = path.join(browsersPath, dir)
+        // Look for the actual executable
+        const possiblePaths = [
+          path.join(chromiumDir, 'chrome-linux', 'chrome'),
+          path.join(chromiumDir, 'chrome-headless-shell-linux64', 'chrome-headless-shell'),
+        ]
+        for (const p of possiblePaths) {
+          if (fs.existsSync(p)) {
+            return p
+          }
+        }
+      }
+    }
+    return null
+  } catch {
+    return null
+  }
+}
+
 async function ensureBrowsersInstalled(projectRoot: string): Promise<{ success: boolean; message: string }> {
   if (!isVercelEnvironment()) {
     return { success: true, message: 'Local environment - browsers assumed to be installed' }
@@ -84,20 +110,28 @@ async function ensureBrowsersInstalled(projectRoot: string): Promise<{ success: 
 
   const browsersPath = '/tmp/pw-browsers'
 
-  // Check if browsers are already installed in /tmp FIRST (before cleanup)
-  if (fs.existsSync(browsersPath) && fs.readdirSync(browsersPath).length > 0) {
+  // Check if chromium executable actually exists
+  const chromiumPath = findChromiumExecutable(browsersPath)
+  if (chromiumPath) {
     // Clean up only cache files, not browsers
     cleanupTmpDirectory()
     const spaceMB = getTmpSpaceMB()
-    return { success: true, message: `Browsers already installed in /tmp (${spaceMB}MB available)` }
+    return { success: true, message: `Chromium found at ${chromiumPath} (${spaceMB}MB available)` }
   }
 
-  // Browsers not installed - clean up and check space
+  // Browsers not properly installed - clean everything including partial browser installs
+  try {
+    if (fs.existsSync(browsersPath)) {
+      fs.rmSync(browsersPath, { recursive: true, force: true })
+    }
+  } catch {
+    // Ignore cleanup errors
+  }
   cleanupTmpDirectory()
-  const spaceMB = getTmpSpaceMB()
 
-  if (spaceMB < 150) {
-    return { success: false, message: `Not enough space in /tmp: ${spaceMB}MB available, need at least 150MB for browser installation` }
+  const spaceMB = getTmpSpaceMB()
+  if (spaceMB < 200) {
+    return { success: false, message: `Not enough space in /tmp: ${spaceMB}MB available, need at least 200MB for browser installation` }
   }
 
   // Install browsers to /tmp
