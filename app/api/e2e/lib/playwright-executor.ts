@@ -39,16 +39,64 @@ function isVercelEnvironment(): boolean {
   return !!process.env.VERCEL || !!process.env.VERCEL_ENV
 }
 
+function cleanupTmpDirectory(): void {
+  const tmpDirs = [
+    '/tmp/playwright-transform-cache-*',
+    '/tmp/playwright-java-*',
+    '/tmp/pw-browsers-*',
+  ]
+
+  try {
+    // Clean up old cache directories
+    const tmpContents = fs.readdirSync('/tmp')
+    for (const item of tmpContents) {
+      if (
+        item.startsWith('playwright-transform-cache') ||
+        item.startsWith('playwright-java') ||
+        item.startsWith('pw-') ||
+        item.startsWith('chromium-')
+      ) {
+        const fullPath = `/tmp/${item}`
+        try {
+          fs.rmSync(fullPath, { recursive: true, force: true })
+        } catch {
+          // Ignore errors during cleanup
+        }
+      }
+    }
+  } catch {
+    // Ignore errors
+  }
+}
+
+function getTmpSpaceMB(): number {
+  try {
+    const { execSync } = require('child_process')
+    const output = execSync('df -m /tmp 2>/dev/null | tail -1 | awk \'{print $4}\'', { encoding: 'utf-8' })
+    return parseInt(output.trim(), 10) || 0
+  } catch {
+    return 500 // Assume 500MB if check fails
+  }
+}
+
 async function ensureBrowsersInstalled(projectRoot: string): Promise<{ success: boolean; message: string }> {
   if (!isVercelEnvironment()) {
     return { success: true, message: 'Local environment - browsers assumed to be installed' }
+  }
+
+  // Clean up old cache files first
+  cleanupTmpDirectory()
+
+  const spaceMB = getTmpSpaceMB()
+  if (spaceMB < 150) {
+    return { success: false, message: `Not enough space in /tmp: ${spaceMB}MB available, need at least 150MB` }
   }
 
   const browsersPath = '/tmp/pw-browsers'
 
   // Check if browsers are already installed in /tmp
   if (fs.existsSync(browsersPath) && fs.readdirSync(browsersPath).length > 0) {
-    return { success: true, message: 'Browsers already installed in /tmp' }
+    return { success: true, message: `Browsers already installed in /tmp (${spaceMB}MB available)` }
   }
 
   // Install browsers to /tmp
@@ -153,6 +201,13 @@ export async function executePlaywrightTests(runId: string): Promise<void> {
     }
   }
 
+  // Clean up old cache before running tests
+  if (isVercelEnvironment()) {
+    cleanupTmpDirectory()
+    const spaceMB = getTmpSpaceMB()
+    testRunManager.addLog(runId, 'info', `Available /tmp space: ${spaceMB}MB`)
+  }
+
   testRunManager.addLog(runId, 'info', '─'.repeat(60))
 
   const playwrightBin = getPlaywrightBinary(projectRoot)
@@ -206,6 +261,8 @@ export async function executePlaywrightTests(runId: string): Promise<void> {
     execEnv.HOME = '/tmp'
     execEnv.npm_config_cache = '/tmp/.npm'
     execEnv.PLAYWRIGHT_BROWSERS_PATH = '/tmp/pw-browsers'
+    // Disable transform cache to save space
+    execEnv.PLAYWRIGHT_SKIP_BROWSER_GC = '1'
   }
 
   testRunManager.addLog(runId, 'info', `Using playwright: ${playwrightBin}`)
