@@ -35,10 +35,10 @@ function getConfigEnv(config: TestConfig): Record<string, string> {
 
   switch (config) {
     case 'staging':
-      baseEnv.PLAYWRIGHT_BASE_URL = process.env.E2E_STAGING_URL || 'https://gloz-dev.gloground.com'
+      baseEnv.PLAYWRIGHT_BASE_URL = process.env.NEXT_PUBLIC_E2E_STAGING_URL || 'https://gloz-dev.gloground.com'
       break
     case 'hub':
-      baseEnv.PLAYWRIGHT_BASE_URL = process.env.E2E_HUB_URL || 'http://localhost:3000'
+      baseEnv.PLAYWRIGHT_BASE_URL = process.env.NEXT_PUBLIC_E2E_HUB_URL || 'http://localhost:3000'
       break
     case 'local':
     default:
