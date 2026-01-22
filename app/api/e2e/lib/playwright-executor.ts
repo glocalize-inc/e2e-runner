@@ -18,11 +18,19 @@ function getActiveProcesses(): Map<string, ChildProcess> {
 }
 
 function getPlaywrightBinary(projectRoot: string): string {
-  // Try to find the playwright binary in node_modules
-  const localBin = path.join(projectRoot, 'node_modules', '.bin', 'playwright')
-  if (fs.existsSync(localBin)) {
-    return localBin
+  // Try multiple possible locations for the playwright binary
+  const possiblePaths = [
+    path.join(projectRoot, 'node_modules', '.bin', 'playwright'),
+    '/var/task/node_modules/.bin/playwright', // Vercel serverless path
+    path.join(process.cwd(), 'node_modules', '.bin', 'playwright'),
+  ]
+
+  for (const binPath of possiblePaths) {
+    if (fs.existsSync(binPath)) {
+      return binPath
+    }
   }
+
   // Fallback to npx (for local development)
   return 'npx'
 }
@@ -149,6 +157,27 @@ export async function executePlaywrightTests(runId: string): Promise<void> {
 
   const playwrightBin = getPlaywrightBinary(projectRoot)
   const useNpx = playwrightBin === 'npx'
+
+  // Debug: log working directory and file existence
+  testRunManager.addLog(runId, 'info', `Working directory: ${projectRoot}`)
+  testRunManager.addLog(runId, 'info', `CWD: ${process.cwd()}`)
+
+  const configPath = run.config === 'staging'
+    ? path.join(projectRoot, 'playwright.staging.config.ts')
+    : run.config === 'hub'
+    ? path.join(projectRoot, 'playwright.hub.config.ts')
+    : path.join(projectRoot, 'playwright.config.ts')
+
+  testRunManager.addLog(runId, 'info', `Config path: ${configPath}`)
+  testRunManager.addLog(runId, 'info', `Config exists: ${fs.existsSync(configPath)}`)
+
+  // List files in project root for debugging
+  try {
+    const files = fs.readdirSync(projectRoot)
+    testRunManager.addLog(runId, 'info', `Files in root: ${files.slice(0, 20).join(', ')}${files.length > 20 ? '...' : ''}`)
+  } catch (e) {
+    testRunManager.addLog(runId, 'info', `Cannot read root dir: ${e}`)
+  }
 
   const args = useNpx
     ? ['playwright', 'test', testPattern, '--reporter=list']

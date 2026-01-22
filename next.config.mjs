@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'url'
-import { dirname } from 'path'
+import { dirname, join } from 'path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -8,6 +8,18 @@ const nextConfig = {
   reactStrictMode: true,
   serverExternalPackages: ['@playwright/test', 'playwright', 'playwright-core'],
   outputFileTracingRoot: __dirname,
+  outputFileTracingIncludes: {
+    '/api/e2e/**/*': [
+      './playwright.config.ts',
+      './playwright.staging.config.ts',
+      './playwright.hub.config.ts',
+      './e2e/**/*',
+      './node_modules/.bin/playwright',
+      './node_modules/@playwright/**/*',
+      './node_modules/playwright/**/*',
+      './node_modules/playwright-core/**/*',
+    ],
+  },
 }
 
 export default nextConfig
