@@ -40,21 +40,19 @@ function isVercelEnvironment(): boolean {
 }
 
 function cleanupTmpDirectory(): void {
-  const tmpDirs = [
-    '/tmp/playwright-transform-cache-*',
-    '/tmp/playwright-java-*',
-    '/tmp/pw-browsers-*',
-  ]
-
   try {
-    // Clean up old cache directories
+    // Clean up old cache directories but NOT the browsers
     const tmpContents = fs.readdirSync('/tmp')
     for (const item of tmpContents) {
+      // Skip the browsers directory - we want to keep it
+      if (item === 'pw-browsers' || item === 'e2e') {
+        continue
+      }
+
       if (
         item.startsWith('playwright-transform-cache') ||
         item.startsWith('playwright-java') ||
-        item.startsWith('pw-') ||
-        item.startsWith('chromium-')
+        item.startsWith('chromium_')
       ) {
         const fullPath = `/tmp/${item}`
         try {
@@ -84,19 +82,22 @@ async function ensureBrowsersInstalled(projectRoot: string): Promise<{ success: 
     return { success: true, message: 'Local environment - browsers assumed to be installed' }
   }
 
-  // Clean up old cache files first
-  cleanupTmpDirectory()
-
-  const spaceMB = getTmpSpaceMB()
-  if (spaceMB < 150) {
-    return { success: false, message: `Not enough space in /tmp: ${spaceMB}MB available, need at least 150MB` }
-  }
-
   const browsersPath = '/tmp/pw-browsers'
 
-  // Check if browsers are already installed in /tmp
+  // Check if browsers are already installed in /tmp FIRST (before cleanup)
   if (fs.existsSync(browsersPath) && fs.readdirSync(browsersPath).length > 0) {
+    // Clean up only cache files, not browsers
+    cleanupTmpDirectory()
+    const spaceMB = getTmpSpaceMB()
     return { success: true, message: `Browsers already installed in /tmp (${spaceMB}MB available)` }
+  }
+
+  // Browsers not installed - clean up and check space
+  cleanupTmpDirectory()
+  const spaceMB = getTmpSpaceMB()
+
+  if (spaceMB < 150) {
+    return { success: false, message: `Not enough space in /tmp: ${spaceMB}MB available, need at least 150MB for browser installation` }
   }
 
   // Install browsers to /tmp
